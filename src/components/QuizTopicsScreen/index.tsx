@@ -1,7 +1,7 @@
 import { AppLogo } from '../../config/icons'
-// import { useQuiz } from '../../context/QuizContext'
+import { useQuiz } from '../../context/QuizContext'
 // import { quizTopics } from '../../data/quizTopics'
-// import { ScreenTypes } from '../../types'
+import { ScreenTypes } from '../../types'
 
 // import cn from 'classnames'
 import Button from '../ui/Button'
@@ -10,10 +10,10 @@ import HighlightedText from '../ui/HighlightedText'
 import PageCenter from '../ui/PageCenter'
 
 const QuizTopicsScreen: React.FC = () => {
-  // const { quizTopic, selectQuizTopic, setCurrentScreen } = useQuiz()
+  const { setCurrentScreen } = useQuiz()
 
   const goToQuizDetailsScreen = () => {
-    // setCurrentScreen(ScreenTypes.QuizDetailsScreen)
+    setCurrentScreen(ScreenTypes.QuizDetailsScreen)
   }
 
   return (
