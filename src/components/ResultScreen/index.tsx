@@ -96,7 +96,7 @@ const ResultScreen: FC = () => {
       </div>
       <Flex flxEnd>
         <Button
-          text="RETRY"
+          text="Refazer"
           onClick={onClickRetry}
           icon={<Refresh />}
           iconPosition="left"

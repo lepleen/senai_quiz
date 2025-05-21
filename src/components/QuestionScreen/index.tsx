@@ -118,11 +118,11 @@ const QuestionScreen: FC = () => {
       {/* timer or finish quiz modal*/}
       {(showTimerModal || showResultModal) && (
         <ModalWrapper
-          title={showResultModal ? 'Done!' : 'Your time is up!'}
-          subtitle={`You have attempted ${result.length} questions in total.`}
+          title={showResultModal ? 'Feito!' : 'Your time is up!'}
+          subtitle={`Você tentou ${result.length} perguntas no total.`}
           onClick={handleModal}
           icon={showResultModal ? <CheckIcon /> : <TimerIcon />}
-          buttonTitle="SHOW RESULT"
+          buttonTitle="Resultado"
         />
       )}
     </PageCenter>

@@ -23,12 +23,12 @@ const QuizTopicsScreen: React.FC = () => {
           <AppLogo width={220} />
         </div>
         <h2 className="mb-5 text-center text-3xl font-bold">
-          WELCOME TO <HighlightedText> XEVEN QUIZ</HighlightedText>
+          Matematica <HighlightedText> Sistema Solar</HighlightedText>
         </h2>
-        <p className="text-center text-xl leading-7 font-medium">
-          Select topic below to start your Quiz.
+        <p className="text-center text-xl leading-7 font-medium mb-5">
+          Bem vindo ao Quiz, vamos começar?
         </p>
-        <div className="mt-10 mb-11 flex max-w-full flex-wrap justify-center gap-5 md:max-w-[60%] md:gap-7">
+        {/* <div className="mt-10 mb-11 flex max-w-full flex-wrap justify-center gap-5 md:max-w-[60%] md:gap-7">
           {quizTopics.map(({ title, icon, disabled }) => (
             <div
               key={title}
@@ -49,7 +49,7 @@ const QuizTopicsScreen: React.FC = () => {
               </span>
             </div>
           ))}
-        </div>
+        </div> */}
 
         <Button text="Continue" onClick={goToQuizDetailsScreen} bold />
       </CenterCardContainer>

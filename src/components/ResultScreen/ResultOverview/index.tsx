@@ -19,21 +19,21 @@ const ResultOverview: FC<ResultOverviewProps> = ({ result }) => {
 
   // Passed if 60 or more than 60% marks
   const calculateStatus =
-    (obtainedScore / quizDetails.totalScore) * 100 >= 60 ? 'Passed' : 'Failed'
+    (obtainedScore / quizDetails.totalScore) * 100 >= 60 ? 'Aprovado' : 'Reprovado'
 
   return (
     <div className="mb-7 text-center md:mb-18">
       <p className="mt-4 text-lg font-medium">
-        You attempted questions:{' '}
+        Suas tentativas:{' '}
         <HighlightedText> {totalQuestionAttempted} </HighlightedText>/{' '}
         {quizDetails.totalQuestions}
       </p>
       <p className="mt-4 text-lg font-medium">
-        Score secured:<HighlightedText> {obtainedScore} </HighlightedText>/{' '}
+      Pontuação garantida:<HighlightedText> {obtainedScore} </HighlightedText>/{' '}
         {quizDetails.totalScore}
       </p>
       <p className="mt-4 text-lg font-medium">
-        Time Spent:<HighlightedText> {convertSeconds(endTime)} </HighlightedText>
+      Tempo gasto:<HighlightedText> {convertSeconds(endTime)} </HighlightedText>
       </p>
       <p className="mt-4 text-lg font-medium">
         Status:<HighlightedText> {calculateStatus}</HighlightedText>
