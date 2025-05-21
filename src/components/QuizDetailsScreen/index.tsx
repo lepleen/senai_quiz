@@ -26,23 +26,23 @@ const QuizDetailsScreen = () => {
 
         <div className="mt-4 mb-10 max-w-[500px] text-center text-xl font-medium">
           <p className="text-5 mt-4 leading-[1.3] font-medium">
-            Selected Quiz Topic: <HighlightedText>{selectedQuizTopic}</HighlightedText>
+            Tópico do Quiz selecionado: <HighlightedText>{selectedQuizTopic}</HighlightedText>
           </p>
 
           <p className="text-5 mt-4 leading-[1.3] font-medium">
-            Total questions to attempt:{' '}
+          Total de perguntas a serem respondidas:{' '}
             <HighlightedText>{totalQuestions}</HighlightedText>
           </p>
           <p className="text-5 mt-4 leading-[1.3] font-medium">
-            Score in total: <HighlightedText>{totalScore}</HighlightedText>
+          Pontuação total: <HighlightedText>{totalScore}</HighlightedText>
           </p>
           <p className="text-5 mt-4 leading-[1.3] font-medium">
-            Total time: <HighlightedText>{convertSeconds(totalTime)}</HighlightedText>
+          Tempo total: <HighlightedText>{convertSeconds(totalTime)}</HighlightedText>
           </p>
         </div>
 
         <Button
-          text="Start"
+          text="Começar"
           icon={<StartIcon />}
           iconPosition="left"
           onClick={goToQuestionScreen}
