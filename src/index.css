@@ -4,13 +4,13 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-  --color-primary-text: #11052c;
+  --color-primary-text: #0057fcff;
   --color-secondary-text: #2d264b;
   --color-disabled-card: #fbf4ecbc;
   --color-select-topic-bg: #ffffff;
-  --color-theme-color: #800080;
+  --color-theme-color: #0057fcff;
   --color-disabled-button: #e7e8e9;
-  --color-outline-button-text: #800080;
+  --color-outline-button-text: #0057fcff;
   --color-button-text: #ffffff;
   --color-card-bg: #ffffff;
   --color-dark: #282526;
@@ -19,14 +19,14 @@
   --color-theme-text: #000000;
   --color-app-logo: #000000;
   --color-border: #eaeaea;
-  --color-selected-answer: #ffd6ff;
+  --color-selected-answer: ##0057fcff;
   --color-answer-bg: #ffffff;
-  --color-info-text: #ff783f;
-  --color-info-bg: #ffb23f26;
+  --color-info-text: #DF6807;
+  --color-info-bg: #ffffff;
   --color-success: #12b40e;
   --color-success-light: #ddffdc;
   --color-danger: #ff143e;
-  --color-danger-light: #ffd7de;
+  --color-danger-light: ##0057fcff;
 
   --shadow-active-button: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 
@@ -62,35 +62,35 @@
   --color-primary-text: #ffffff;
   --color-secondary-text: #ffffff;
   --color-disabled-card: #00000080;
-  --color-select-topic-bg: #21191c;
-  --color-theme-color: #c000c0;
-  --color-disabled-button: #181214;
+  --color-select-topic-bg: #ffffff;
+  --color-theme-color: #FF8200;
+  --color-disabled-button: #cfcfcf;
   --color-outline-button-text: #ffffff;
   --color-button-text: #000000;
-  --color-card-bg: #241a1a;
+  --color-card-bg: #344452;
   --color-dark: #282526;
   --color-dark-grey: #9fa3a9;
   --color-darker-grey: #817a8e;
   --color-theme-text: #ffffff;
   --color-app-logo: #ffffff;
   --color-border: transparent;
-  --color-selected-answer: #151113;
-  --color-answer-bg: #151113;
-  --color-info-text: #ff783f;
+  --color-selected-answer: #132d44;
+  --color-answer-bg: #132d44;
+  --color-info-text: #DF6807;
   --color-info-bg: #ffb23f26;
   --color-success: #12b40e;
-  --color-success-light: #151113;
+  --color-success-light: #132d44;
   --color-danger: #ff143e;
-  --color-danger-light: #151113;
+  --color-danger-light: #132d44;
 
   --shadow-active-button: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 @utility theme-gradient {
-  background: linear-gradient(to right, #800080, #ffc0cb);
+  background: linear-gradient(to right, #0057fcff, #0057fcff);
 
   @variant dark {
-    background: linear-gradient(90deg, #0e050e 0%, #281e20 100%);
+    background: linear-gradient(90deg, #0c505b 0%, #0c365b 100%);
   }
 }
 
@@ -98,15 +98,15 @@
   background: #e5e5e5;
 
   @variant dark {
-    background: linear-gradient(90deg, #0e050e 0%, #281e20 100%);
+    background: linear-gradient(90deg, #0c505b 0%, #0c365b 100%);
   }
 }
 
 @utility button-background {
-  background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+  background: linear-gradient(90.04deg, #0057fcff 0.03%, #0057fcff 99.96%);
 
   @variant dark {
-    background: linear-gradient(90.04deg, #800080 0.03%, #ffc0cb 99.96%);
+    background: linear-gradient(90.04deg, #0057fcff 0.03%, #0057fcff 99.96%);
   }
 }
 
